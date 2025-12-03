@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #faf5f0;
+  --color-primary-100: #f5ebe2;
+  --color-primary-200: #e8d4c4;
+  --color-primary-300: #dab8a0;
+  --color-primary-400: #c89a7b;
+  --color-primary-500: #b8845f;
+  --color-primary-600: #a36f4f;
+  --color-primary-700: #8a5a42;
+  --color-primary-800: #6f4a37;
+  --color-primary-900: #5a3d2f;
+  
+  --color-accent-50: #fef9f3;
+  --color-accent-100: #fdf3e7;
+  --color-accent-200: #fbe7cf;
+  --color-accent-300: #f9dbb7;
+  --color-accent-400: #f5c99f;
+  --color-accent-500: #f0b887;
+  --color-accent-600: #e8a56f;
+  --color-accent-700: #d98d52;
+  --color-accent-800: #c67435;
+  --color-accent-900: #b35c18;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+  }
+
+  .btn-primary {
+    @apply inline-block px-8 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-block px-8 py-3 bg-white text-primary-600 font-semibold rounded-lg border-2 border-primary-600 hover:bg-primary-50 transition-colors duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+}
